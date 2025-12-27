@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beaches View - Your Paradise Destination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Spinner -->
+    <div id="spinner" class="show">
+        <div class="spinner-border"></div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar-wrapper">
+        <div class="topbar">
+            <div class="social-icons">
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="auth">
+                <a href="registration.html">Register</a>
+                <a href="login.html">Login</a>
+                <div class="dropdown">
+                    <a href="my-dashboard.html">My Dashboard <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="profile.html">My Profile</a>
+                        <a href="inbox.html">Inbox</a>
+                        <a href="notification.html">Notifications</a>
+                        <a href="account-settings.html">Account Settings</a>
+                        <a href="logout.html">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="brand">Beaches View
+            <img src="img/th__16_-removebg-preview.png" alt="Beaches View Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="packages.html">Packages</a>
+            <a href="blog.html">Blog</a>
+
+            <div class="dropdown">
+                <a href="#">Pages <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="destination.html">Destination</a>
+                    <a href="tour.html">Explore Tour</a>
+                    <a href="booking.html">Booking</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="guides.html">Guides</a>
+                    <a href="testimonial.html">Testimonial</a>
+                    <a href="404.html">404 Page</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#">Zone <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="east.html">East</a>
+                    <a href="west.html">West</a>
+                    <a href="north.html">North</a>
+                    <a href="south.html">South</a>
+                </div>
+            </div>
+
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="#booking-section" class="btn">Book Now</a>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+    </nav>
+    
+  <!-- Guides fragment (paste inside your layout) -->
+<section id="guides-section" class="container section-fade-in" aria-labelledby="guides-title">
+  <div class="section-header" style="text-align:center;">
+    <h5>Guides</h5>
+    <h1 id="guides-title">Meet Our Travel Guides</h1>
+  </div>
+
+  <!-- Optional search/filter -->
+  <div class="guides-controls" style="display:flex;gap:12px;align-items:center;justify-content:center;margin:12px 0;flex-wrap:wrap;">
+    <label for="guide-search" class="sr-only">Search guides</label>
+    <input id="guide-search" type="search" placeholder="Search guides by name or skill..." style="padding:8px 10px;border-radius:8px;border:1px solid rgba(2,6,23,0.06);min-width:220px;">
+    <select id="guide-region" aria-label="Filter by region" style="padding:8px;border-radius:8px;border:1px solid rgba(2,6,23,0.06);">
+      <option value="">All regions</option>
+      <option value="asia">Asia</option>
+      <option value="europe">Europe</option>
+      <option value="americas">Americas</option>
+      <option value="africa">Africa</option>
+    </select>
+    <button id="guide-filter-btn" class="btn btn-small">Filter</button>
+  </div>
+
+  <!-- Guides grid -->
+  <div class="card-container" role="list" aria-label="Guide profiles" style="margin-top:8px;">
+    <!-- Guide 1 -->
+    <article class="card" role="listitem" aria-labelledby="guide-1-name">
+      <img src="images/imdad.jpg" alt="Imdad Hussain" />
+      <div class="info">
+        <h3 id="guide-1-name">Imdad Hussain</h3>
+        <p>Senior Guide — Cultural & Heritage</p>
+        <div class="social-icons" aria-label="Social links">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="overlay">
+        <p>Imdad is an experienced cultural guide who specializes in heritage tours and storytelling across the Sindh region.</p>
+        <div style="margin-top:10px;">
+          <a href="guide-profile.html?guide=imdad" class="btn btn-small">View Profile</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Guide 2 -->
+    <article class="card" role="listitem" aria-labelledby="guide-2-name">
+      <img src="images/zaryab.jpg" alt="Zaryab Soomro" />
+      <div class="info">
+        <h3 id="guide-2-name">Zaryab Soomro</h3>
+        <p>Logistics & Safety Manager</p>
+        <div class="social-icons" aria-label="Social links">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="overlay">
+        <p>Zaryab coordinates logistics for multi-day trips, ensuring routes, transport and accommodation meet our standards.</p>
+        <div style="margin-top:10px;">
+          <a href="guide-profile.html?guide=zaryab" class="btn btn-small">View Profile</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Guide 3 -->
+    <article class="card" role="listitem" aria-labelledby="guide-3-name">
+      <img src="images/mudasir.jpg" alt="Muhammad Mudasir" />
+      <div class="info">
+        <h3 id="guide-3-name">Muhammad Mudasir</h3>
+        <p>Tour Host & Storyteller</p>
+        <div class="social-icons" aria-label="Social links">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="overlay">
+        <p>Mudasir is passionate about local cuisine and immersive experiences — great for food & culture themed tours.</p>
+        <div style="margin-top:10px;">
+          <a href="guide-profile.html?guide=mudasir" class="btn btn-small">View Profile</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Guide 4 (example) -->
+    <article class="card" role="listitem" aria-labelledby="guide-4-name">
+      <img src="images/guide-placeholder.jpg" alt="Alex Rivera" />
+      <div class="info">
+        <h3 id="guide-4-name">Alex Rivera</h3>
+        <p>Marine & Diving Specialist</p>
+        <div class="social-icons" aria-label="Social links">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="overlay">
+        <p>Alex leads underwater adventures and certified dive trips with a focus on safety and marine conservation.</p>
+        <div style="margin-top:10px;">
+          <a href="guide-profile.html?guide=alex" class="btn btn-small">View Profile</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- CTA -->
+  <div style="text-align:center;margin-top:18px;">
+    <a href="guides.html" class="btn">View All Guides</a>
+    <a href="contact.html" class="btn btn-small" style="background:var(--accent);color:#000;margin-left:8px;">Request a Private Guide</a>
+  </div>
+</section>
+
+<!-- Footer Section -->
+    <footer class="footer-extended">
+        <div class="footer-topbar">
+            <div class="footer-brand">🌊 Beaches View</div>
+            <div class="footer-social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="packages.html">Packages</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Beaches View. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

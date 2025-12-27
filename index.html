@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beaches View - Your Paradise Destination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Spinner -->
+    <div id="spinner" class="show">
+        <div class="spinner-border"></div>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar-wrapper">
+        <div class="topbar">
+            <div class="social-icons">
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="auth">
+                <a href="registration.html">Register</a>
+                <a href="login.html">Login</a>
+                <div class="dropdown">
+                    <a href="my-dashboard.html">My Dashboard <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="profile.html">My Profile</a>
+                        <a href="inbox.html">Inbox</a>
+                        <a href="notification.html">Notifications</a>
+                        <a href="account-settings.html">Account Settings</a>
+                        <a href="logout.html">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="mainNavbar">
+        <div class="brand">Tour the World’s Best Beaches
+            <img src="img/th__16_-removebg-preview.png" alt="Beaches View Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="packages.html">Packages</a>
+            <a href="blog.html">Blog</a>
+
+            <div class="dropdown">
+                <a href="#">Pages <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="destination.html">Destination</a>
+                    <a href="explore.html">Explore Tour</a>
+                    <a href="booking.html">Booking</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="guides.html">Guides</a>
+                    <a href="testimonial.html">Testimonial</a>
+                    <a href="404.html">404 Page</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="#">Zone <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="east.html">East</a>
+                    <a href="west.html">West</a>
+                    <a href="north.html">North</a>
+                    <a href="south.html">South</a>
+                </div>
+            </div>
+
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="#booking-section" class="btn">Book Now</a>
+        <button class="hamburger" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="img/hd1.jpg" class="active" alt="Slide 1">
+            <img src="img/hd2.jpg" alt="Slide 2">
+            <img src="img/hd3.jpg" alt="Slide 3">
+            <img src="img/hd4.jpg" alt="Slide 4">
+        </div>
+        <div class="carousel-caption">
+            <h4>World's Beaches View</h4>
+            <h1>Do You Like To Go?</h1>
+            <p>World Beaches View is your ultimate destination to explore the most stunning beaches around
+                the globe. From crystal-clear waters to golden sands, it offers a glimpse into paradise locations
+                perfect for travel, relaxation, and adventure.</p>
+            <a href="#destination-section" class="btn">Discover Now</a>
+        </div>
+        <div class="carousel-controls">
+            <button onclick="prevSlide()">❮</button>
+            <button onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="about section-fade-in" id="about-section">
+        <div class="about-img">
+            <img src="img/Imdad-1.png" alt="About Image">
+        </div>
+        <div class="about-content">
+            <h5>About Us</h5>
+            <h1>Welcome to <span>World's Beaches View</span></h1>
+            <p>At World's Beaches View, we celebrate the natural beauty
+                of the world's most iconic and hidden beaches. From turquoise
+                waters to soft sandy coastlines, our mission is to bring you
+                closer to the serene charm and unique culture of each shoreline we showcase.</p>
+            <p>Whether you're dreaming of a tropical escape or planning
+                your next coastal adventure, our platform provides inspiration,
+                travel tips, and curated guides. Dive into unforgettable
+                experiences, all from the comfort of your screen — or
+                better yet, your sun lounger.</p>
+            <div class="features">
+                <div><p><span><i class="fa-solid fa-arrow-right"></i></span> First Class Flights</p></div>
+                <div><p><span><i class="fa-solid fa-arrow-right"></i></span> Handpicked Hotels</p></div>
+                <div><p><span><i class="fa-solid fa-arrow-right"></i></span> 5 Star Accommodations</p></div>
+                <div><p><span><i class="fa-solid fa-arrow-right"></i></span> Latest Model Vehicles</p></div>
+                <div><p><span><i class="fa-solid fa-arrow-right"></i></span> 150 Premium City Tours</p></div>
+                <div><p><span><i class="fa-solid fa-arrow-right"></i></span> 24/7 Service</p></div>
+            </div>
+            <a class="btn" href="#">Read More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services section-fade-in" id="services-section">
+        <div class="services-header section-header">
+            <h5 class="section-title">Services</h5>
+            <h1>Our Services</h1>
+        </div>
+        <div class="services-container">
+            <div class="service-box service-box-1">
+                <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="service-content">
+                    <h5>🌴 Worldwide Beaches Tour</h5>
+                    <p>Discover the most breathtaking beaches across the globe with our curated Worldwide Beaches Tour. From the pristine shores of the Maldives to the vibrant coasts of Brazil, each destination offers unique experiences, natural beauty, and unforgettable sunsets waiting to be explored.</p>
+                </div>
+            </div>
+            <div class="service-box service-box-2">
+                <div class="service-icon"><i class="fa-solid fa-hotel"></i></div>
+                <div class="service-content">
+                    <h5>Hotel Reservation</h5>
+                    <p>Enjoy hassle-free stays with our Hotel Reservation service. We partner with top-rated hotels worldwide to offer you the most comfortable, convenient, and luxurious accommodations—tailored to your destination and budget, for a truly unforgettable journey.</p>
+                </div>
+            </div>
+            <div class="service-box service-box-3">
+                <div class="service-icon"><i class="fa-solid fa-map-marked-alt"></i></div>
+                <div class="service-content">
+                    <h5>Travel Guides</h5>
+                    <p>Get expert travel guidance tailored to your dream destinations. From itinerary planning to insider tips, our experienced guides help you make the most of every moment, ensuring your journey is smooth, safe, and unforgettable.</p>
+                </div>
+            </div>
+            <div class="service-box service-box-4">
+                <div class="service-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="service-content">
+                    <h5>Event Management</h5>
+                    <p>From beachside weddings to corporate retreats, our event management services take care of every detail. We handle planning, logistics, and on-site coordination so you can relax and enjoy a seamless, unforgettable event at breathtaking coastal destinations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="services-button">
+            <a href="#" class="btn">Service More</a>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages-section section-fade-in" id="packages-section">
+        <div class="section-header">
+            <h5>Packages</h5>
+            <h1>Explore Our Popular Tours</h1>
+        </div>
+        <div class="packages-container">
+            <div class="package-card">
+                <img src="img/17.webp" alt="Tropical Escape">
+                <div class="package-info">
+                    <h3>Tropical Island Retreat</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Maldives</p>
+                    <p class="description">7 days of pure bliss on white sandy beaches, crystal clear waters, and luxury resorts.</p>
+                    <div class="price">$1200 / Person</div>
+                    <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+            </div>
+            <div class="package-card">
+                <img src="img/18.jpg" alt="European Riviera">
+                <div class="package-info">
+                    <h3>European Coastal Charm</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> French Riviera</p>
+                    <p class="description">5 days exploring the glamorous coastline, vibrant cities, and exquisite cuisine.</p>
+                    <div class="price">$950 / Person</div>
+                    <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+            </div>
+            <div class="package-card">
+                <img src="img/19.jpg" alt="Asian Beaches">
+                <div class="package-info">
+                    <h3>Southeast Asia Beach Hopping</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Thailand & Vietnam</p>
+                    <p class="description">10 days discovering vibrant cultures, stunning islands, and delicious street food.</p>
+                    <div class="price">$1500 / Person</div>
+                    <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+            </div>
+            <div class="package-card">
+                <img src="img/20.webp" alt="Caribbean Adventure">
+                <div class="package-info">
+                    <h3>Caribbean Sun & Fun</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Barbados</p>
+                    <p class="description">6 days of vibrant Caribbean culture, stunning coral reefs, and lively beach parties.</p>
+                    <div class="price">$1100 / Person</div>
+                    <a href="#" class="btn btn-small">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Detail Section -->
+    <section class="packages-detail-section section-fade-in" id="packages-detail-section">
+        <div class="section-header">
+            <h5>Special Offers</h5>
+            <h1>Our Exclusive Tour Packages</h1>
+        </div>
+        <div class="packages-detail-container">
+            <div class="detail-card">
+                <img src="img/21.webp" alt="Family Beach Vacation">
+                <div class="detail-content">
+                    <h3>Family Fun Beach Escape</h3>
+                    <p class="duration"><i class="fas fa-clock"></i> 7 Days / 6 Nights</p>
+                    <p class="description">Create unforgettable memories with our family-friendly beach vacation package, complete with kids' activities, water sports, and relaxing beachfront stays.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> All-inclusive resort</li>
+                        <li><i class="fas fa-check-circle"></i> Kids' club & entertainment</li>
+                        <li><i class="fas fa-check-circle"></i> Snorkeling & kayaking</li>
+                        <li><i class="fas fa-check-circle"></i> Private beach access</li>
+                    </ul>
+                    <div class="price">Starting from <span>$2500</span> per family</div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <img src="img/22.jpg" alt="Adventure Diving Expedition">
+                <div class="detail-content">
+                    <h3>Adventure Diving Expedition</h3>
+                    <p class="duration"><i class="fas fa-clock"></i> 5 Days / 4 Nights</p>
+                    <p class="description">Dive into the breathtaking underwater world with our expert-led diving expedition. Explore vibrant coral reefs and marine life in pristine locations.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Certified dive instructors</li>
+                        <li><i class="fas fa-check-circle"></i> All gear included</li>
+                        <li><i class="fas fa-check-circle"></i> Multiple dive sites</li>
+                        <li><i class="fas fa-check-circle"></i> Underwater photography session</li>
+                    </ul>
+                    <div class="price">Starting from <span>$1800</span> per person</div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <img src="img/hd16.jpg" alt="Romantic Honeymoon Getaway">
+                <div class="detail-content">
+                    <h3>Romantic Honeymoon Getaway</h3>
+                    <p class="duration"><i class="fas fa-clock"></i> 6 Days / 5 Nights</p>
+                    <p class="description">Celebrate your love in paradise with a secluded honeymoon package. Enjoy private dinners, couples' massages, and stunning sunset views.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Private villa with pool</li>
+                        <li><i class="fas fa-check-circle"></i> Couples' spa treatments</li>
+                        <li><i class="fas fa-check-circle"></i> Candlelight beach dinner</li>
+                        <li><i class="fas fa-check-circle"></i> Sunset cruise</li>
+                    </ul>
+                    <div class="price">Starting from <span>$3200</span> per couple</div>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-packages">
+            <a href="packages.html" class="btn">View All Packages</a>
+        </div>
+    </section>
+
+    <!-- Destination Section -->
+    <section class="destination-section section-fade-in" id="destination-section">
+        <div class="section-header">
+            <h5>Destination</h5>
+            <h1>Popular Destination</h1>
+        </div>
+        <div class="destination-tabs">
+            <button class="tab-btn active" data-tab="all">All</button>
+            <button class="tab-btn" data-tab="usa">USA</button>
+            <button class="tab-btn" data-tab="canada">Canada</button>
+            <button class="tab-btn" data-tab="europe">Europe</button>
+            <button class="tab-btn" data-tab="china">China</button>
+            <button class="tab-btn" data-tab="singapore">Singapore</button>
+        </div>
+        <div class="destinations" id="all-destinations">
+            <div class="card usa"><img src="img/destination-1.jpg" alt=""><div class="overlay"><a href="#">20 Photos</a><h4>New York City</h4><a href="#">View All Place →</a></div></div>
+            <div class="card usa"><img src="img/destination-2.jpg" alt=""><div class="overlay"><a href="#">20 Photos</a><h4>Las Vegas</h4><a href="#">View All Place →</a></div></div>
+            <div class="card canada"><img src="img/destination-7.jpg" alt=""><div class="overlay"><a href="#">20 Photos</a><h4>Vancouver</h4><a href="#">View All Place →</a></div></div>
+            <div class="card europe"><img src="img/destination-9.jpg" alt=""><div class="overlay"><a href="#">20 Photos</a><h4>Paris</h4><a href="#">View All Place →</a></div></div>
+            <div class="card china"><img src="img/hd5.jpg" alt=""><div class="overlay"><a href="#">20 Photos</a><h4>Shanghai</h4><a href="#">View All Place →</a></div></div>
+                       <div class="card singapore"><img src="img/hd6.jpg" alt=""><div class="overlay"><a href="#">20 Photos</a><h4>Marina Bay</h4><a href="#">View All Place →</a></div></div>
+            <div class="card usa"><img src="img/hd12.jpg" alt=""><div class="overlay"><a href="#">20 Photos</a><h4>San Francisco</h4><a href="#">View All Place →</a></div></div>
+            <div class="card usa"><img src="img/hd13.jpg" alt=""><div class="overlay"><a href="#">20 Photos</a><h4>Mexico</h4><a href="#">View All Place →</a></div></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-fade-in" id="gallery-section">
+        <div class="section-header">
+            <h5>Gallery</h5>
+            <h1>Our Travel Memories</h1>
+        </div>
+        <div class="gallery-grid">
+            <img src="img/gallery-1.jpg" alt="Gallery 1">
+            <img src="img/gallery-2.jpg" alt="Gallery 2">
+            <img src="img/gallery-3.jpg" alt="Gallery 3">
+            <img src="img/gallery-4.jpg" alt="Gallery 4">
+            <img src="img/gallery-5.jpg" alt="Gallery 5">
+            <img src="img/gallery-6.jpg" alt="Gallery 6">
+            <img src="img/hd1.jpg" alt="Gallery 7">
+            <img src="img/hd4.jpg" alt="Gallery 8">
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking section-fade-in" id="booking-section">
+        <div class="booking-container">
+
+            <!-- Left Info Column -->
+            <div class="booking-column booking-text">
+                <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <h5>Booking</h5>
+                <h1>Online Booking</h1>
+                <p>Experience the world's most amazing destinations with our carefully curated tour packages. From exotic beaches to mountain adventures, we offer unforgettable journeys.</p>
+                <p>Our expert guides and premium services ensure that every moment of your trip is filled with wonder and excitement. Book now for the adventure of a lifetime!</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Booking Form Column -->
+            <div class="booking-column booking-form">
+                <div class="feature-icon"><i class="fa-solid fa-ticket-alt"></i></div>
+                <h1>Book A Tour</h1>
+                <p>Get <span class="highlight">50% Off</span> On Your First Adventure Trip With Travela. Get More Deal Offers Here.</p>
+                <form id="tourForm">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <input type="datetime-local" required />
+                    <select required>
+                        <option value="">Select Destination</option>
+                        <option>Maldives</option>
+                        <option>French Riviera</option>
+                        <option>Thailand</option>
+                        <option>Barbados</option>
+                        <option>New York, USA</option>
+                        <option>Dubai, UAE</option>
+                    </select>
+                    <select required>
+                        <option value="">Select Persons</option>
+                        <option>1 Person</option>
+                        <option>2 Persons</option>
+                        <option>3-5 Persons</option>
+                        <option>6+ Persons</option>
+                    </select>
+                    <select required>
+                        <option value="">Select Category</option>
+                        <option>Adventure</option>
+                        <option>Luxury</option>
+                        <option>Family</option>
+                        <option>Cultural</option>
+                    </select>
+                    <textarea placeholder="Special Request" rows="4"></textarea>
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+
+            <!-- Right Info Column -->
+            <div class="booking-column booking-text">
+                <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
+                <h5>Features</h5>
+                <h1>Why Choose Us</h1>
+                <p>✈️ <strong>Expert Guides:</strong> Professional local guides with years of experience to show you hidden gems and cultural insights.</p>
+                <p>🏨 <strong>Premium Stay:</strong> Carefully selected accommodations that blend comfort with authentic local experiences.</p>
+                <p>🎯 <strong>24/7 Support:</strong> Round-the-clock customer service to ensure your journey is smooth and worry-free.</p>
+                <a href="#" class="read-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section-fade-in" id="cta-section">
+        <div class="cta-content">
+            <h1>Ready to Start Your Adventure?</h1>
+            <p>Don't wait! Explore our amazing destinations and book your dream vacation today. Limited spots available!</p>
+            <a href="#packages-section" class="btn cta-btn">Browse Packages <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Travel Guides Section -->
+    <section class="card-section section-fade-in" id="guides-section">
+        <h3 class="sub-heading">TRAVEL GUIDE</h3>
+        <h1 class="main-heading">Meet Our Guide</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="images/imdad.jpg" alt="Imdad Hussain" />
+                <div class="info">
+                    <h3>Imdad Hussain</h3>
+                    <p>Team Guide</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <p>Imdad is a passionate travel guide with a deep knowledge of Sindh's heritage sites.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/zaryab.jpg" alt="Zaryab Soomro" />
+                <div class="info">
+                    <h3>Zaryab Soomro</h3>
+                    <p>Logistics Manager</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <p>Zaryab manages all backend logistics, ensuring smooth travel operations.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/mudasir.jpg" alt="Muhammad Mudasir" />
+                <div class="info">
+                    <h3>Muhammad Mudasir</h3>
+                    <p>Tour Host</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="overlay">
+                    <p>Mudasir is a tour host and storyteller, leading adventures with enthusiasm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section -->
+    <section class="blog-section section-fade-in" id="blog-section">
+        <div class="section-header">
+            <h5>Our Blog</h5>
+            <h1>Latest Articles & News</h1>
+        </div>
+        <div class="blog-container">
+            <div class="blog-post">
+                <img src="img/blog-1.jpg" alt="Blog Post 1">
+                <div class="post-content">
+                    <span class="post-date"><i class="fas fa-calendar-alt"></i> June 20, 2025</span>
+                    <span class="post-category"><i class="fas fa-tag"></i> Travel Tips</span>
+                    <h3>The Ultimate Guide to Packing for a Beach Vacation</h3>
+                    <p>Never forget essentials again! Our comprehensive guide covers everything from swimwear to sunscreen and emergency kits.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="img/blog-2.jpg" alt="Blog Post 2">
+                <div class="post-content">
+                    <span class="post-date"><i class="fas fa-calendar-alt"></i> June 15, 2025</span>
+                    <span class="post-category"><i class="fas fa-tag"></i> Destinations</span>
+                    <h3>Top 5 Hidden Gem Beaches You Must Visit This Summer</h3>
+                    <p>Escape the crowds and discover pristine, untouched beaches that promise tranquility and breathtaking views.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="img/blog-3.jpg" alt="Blog Post 3">
+                <div class="post-content">
+                    <span class="post-date"><i class="fas fa-calendar-alt"></i> June 10, 2025</span>
+                    <span class="post-category"><i class="fas fa-tag"></i> Adventure</span>
+                    <h3>Why Scuba Diving in the Great Barrier Reef is a Life-Changing Experience</h3>
+                    <p>Explore the vibrant marine ecosystem and witness the beauty of one of the world's natural wonders up close.</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-button">
+            <a href="blog.html" class="btn">View All Articles</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-fade-in" id="testimonials-section">
+        <div class="section-header">
+            <h5>Testimonials</h5>
+            <h1>What Our Clients Say</h1>
+        </div>
+        <div class="testimonial-cards">
+            <div class="testimonial"><p>"Excellent travel service and support!"</p><h4>- Sarah Johnson</h4></div>
+            <div class="testimonial"><p>"We had the best time booking with Beaches View."</p><h4>- Alex Martin</h4></div>
+            <div class="testimonial"><p>"Affordable and reliable. Great customer care."</p><h4>- Priya Singh</h4></div>
+            <div class="testimonial"><p>"Truly an unforgettable adventure, thank you!"</p><h4>- David Lee</h4></div>
+            <div class="testimonial"><p>"The guides were fantastic, very knowledgeable."</p><h4>- Emily Chen</h4></div>
+            <div class="testimonial"><p>"Seamless booking and amazing experiences."</p><h4>- Omar Khan</h4></div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section section-fade-in" id="partners-section">
+        <div class="section-header-1">
+            <h5>Partners</h5>
+            <h1>Our Valued Partners</h1>
+        </div>
+        <div class="partners-logo-grid">
+            <img src="img/p1.jpg" alt="Partner Logo 1">
+            <img src="img/p2.jpg" alt="Partner Logo 2">
+            <img src="img/p3.jpg" alt="Partner Logo 3">
+            <img src="img/p4.jpg" alt="Partner Logo 4">
+            <img src="img/p5.jpg" alt="Partner Logo 5">
+            <img src="img/p6.jpg" alt="Partner Logo 6">
+        </div>
+    </section>
+
+    <!-- Contact & Download Section -->
+    <section class="combined-contact-download-section section-fade-in">
+        <div class="contact-download-container">
+
+            <!-- Contact Form -->
+            <section class="contact-sub-section" id="contact-section">
+                <div class="section-header">
+                    <h5>Contact</h5>
+                    <h1>Get in Touch</h1>
+                </div>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <!-- Download Section -->
+            <section class="download-sub-section" id="download-section">
+                <div class="download-content">
+                    <h2 class="download-title">Explore Beaches View Offline</h2>
+                    <p class="download-description">Download our comprehensive guide to Beaches View destinations, services, and packages. Perfect for planning your next adventure!</p>
+                    <a href="path/to/your/beaches-view-guide.pdf" download class="btn download-btn">
+                        <i class="fas fa-download"></i> Download PDF Guide
+                    </a>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter section-fade-in" id="newsletter-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-extended">
+        <div class="footer-topbar">
+            <div class="footer-brand">🌊 Beaches View</div>
+            <div class="footer-social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="packages.html">Packages</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-bottom">
+           <p>© 2025 All Rights Reserved | Designed & Developed by Imdad Hussain</p>
+
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
+                <a href="support.html">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
+
