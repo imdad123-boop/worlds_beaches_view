@@ -1,4 +1,5 @@
-URL[
+URL[ https://imdad123-boop.github.io/worlds_beaches_view/]
+
 World's Beaches View 🏖️
 World's Beaches View ek beautiful aur responsive web application hai jo duniya ke behtareen beaches ko showcase karti hai. Is project ka maqsad users ko ek clean aur immersive interface ke zariye mukhtalif saahil (beaches) ki khoobsurti dikhana hai.
 
